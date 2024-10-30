@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Care</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <h3>SKIN CARE</h3>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#brand">Brand</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#sales">Sales</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search-cart">
+          <input type="text" placeholder="Search" />
+
+          <img src="/image/shopping.png" alt="Cart" class="cart-icon" />
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <img
+            src="/image/—Pngtree—hand-painted cosmetics female beauty skin_3893783.png"
+            alt="Skin Care Product"
+          />
+        </div>
+        <h1 class="hero-title">lorem</h1>
+        <p class="hero-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          voluptatum, autem porro, tempora voluptates quidem voluptate
+        </p>
+      </section>
+
+      <section class="slide-section">
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="/image/3252593.jpg"
+                  alt="Product 1"
+                  class="card-image"
+                />
+                <span class="product-badge">Sale</span>
+              </div>
+              <div class="product-details">
+                <h3 class="card-title">Product Name 1</h3>
+                <p>Product description goes here. Highlight key features.</p>
+                <div class="product-price">$99.99</div>
+                <a href="#" class="card-button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide fade">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="/image/54332.jpg"
+                  alt="Product 2"
+                  class="card-image"
+                />
+                <span class="product-badge">Sale</span>
+              </div>
+              <div class="product-details">
+                <h3 class="card-title">Product Name 2</h3>
+                <p>Product description goes here. Highlight key features.</p>
+                <div class="product-price">$99.99</div>
+                <a href="#" class="card-button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide fade">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="/image/set-body-care-products.jpg"
+                  alt="Product 3"
+                  class="card-image"
+                />
+                <span class="product-badge">Sale</span>
+              </div>
+              <div class="product-details">
+                <h3 class="card-title">Product Name 3</h3>
+                <p>Product description goes here. Highlight key features.</p>
+                <div class="product-price">$99.99</div>
+                <a href="#" class="card-button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

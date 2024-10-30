@@ -1,0 +1,264 @@
+body {
+    font-family: "Akaya Telivigala", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: #FEEC37;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #FEEC37;
+    color: black;
+}
+
+.logo h3 {
+    width: 50px;
+    height: auto;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.search-cart input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-cart img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 30vw;
+    height: 60vh;
+    border-radius: 50%;
+    background-color: rgb(146, 169, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* border: 2px solid red; */
+}
+
+.hero-content img {
+    width: 300px;
+    height: auto;
+    box-shadow: 8px 5px 50px black;
+    border-radius: 50%;
+    
+    /* border: 2px solid black; */
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-left: 10rem;
+    position: absolute;
+    left: 0px;
+
+}
+
+
+.hero-text {
+    width: 30vw;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    right: 0px;
+    /* border: 2px solid black; */
+    margin-left: 5%;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    /* top: 100px; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.slide {
+    display: none;
+    width: 30%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    user-select: none;
+    border-radius: 60%;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #090808;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+    position: relative;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-price {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .logo h3 {
+        padding-left: 0;
+    }
+
+    .nav ul li {
+        margin: 0 10px;
+    }
+
+    .search-cart {
+        padding-right: 0;
+    }
+
+    .hero-content {
+        width: 60vw;
+        height: 50vh;
+    }
+
+    .hero-content img {
+        width: 200px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .slide {
+        width: 50%;
+    }
+}
